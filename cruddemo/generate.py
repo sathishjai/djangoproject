@@ -13,9 +13,9 @@ def generate(n):
     for i in range(n):
         fsno=randint(1,1000)
         fsname=faker.name()
-        fsclass=randint(1,30)  
+        fsclass=randint(1,12)  
         fsaddress=faker.city()
-        stu_record=student.objects.get_or_create(sno=fsno,sname=fsname,saddress=fsaddress)
+        stu_record=student.objects.get_or_create(sno=fsno,sname=fsname,sclass=fsclass,saddress=fsaddress)
 
 generate(20)
 
