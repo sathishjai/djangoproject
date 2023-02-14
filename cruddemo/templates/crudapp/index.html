@@ -15,9 +15,12 @@
             <td> {{st.sname}}</td>
             <td> {{st.sclass}}</td>
             <td> {{st.saddress}}</td>
+            <td><a href='#'>update </a><a href='/delete/{{st.id}}'>delete</a></td>
+
         </tr>
         {% endfor %}
     </table>
+    <a href='/create'><button type='button'>add new student</button></a>
     {% endblock %}
 
 

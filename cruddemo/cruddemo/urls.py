@@ -20,5 +20,7 @@ from crudapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('check/',views.retrieve_view),
-    path('cheate/',views.create_view),
+    path('create/',views.create_view),
+    path('delete/<id>',views.delete_view),
+    path('update/<id>',views.update_view),
 ]
